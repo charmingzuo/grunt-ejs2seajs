@@ -1,6 +1,6 @@
 {
   "name": "grunt-ejs2seajs",
-  "version": "0.1.23",
+  "version": "0.1.27",
   "description": "通过grunt任务将ejs模板编译为seajs模块 Compile ejs files to seajs module with grunt",
   "main": "index.js",
   "scripts": {
