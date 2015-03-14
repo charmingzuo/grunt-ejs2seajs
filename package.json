@@ -1,6 +1,6 @@
 {
   "name": "grunt-ejs2seajs",
-  "version": "0.1.17",
+  "version": "0.1.19",
   "description": "转换ejs模板文件为seajs模块, 但只支持基本标签：<%= %> , <%- %> or <% %>，不支持ejs内嵌语法",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,10 @@
     "grunt",
     "seajs",
     "ejs",
+    "jade",
+    "mustache",
+    "handlebars",
+    "tmpl",
     "template"
   ],
   "author": {
