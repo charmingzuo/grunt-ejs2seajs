@@ -1,7 +1,3 @@
-通过grunt任务将ejs模板编译为seajs模块
-========
-Compile ejs files to seajs module with grunt
-========
 优点：
 --------
 - 便于调试
