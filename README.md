@@ -16,47 +16,55 @@ Compile ejs files to seajs module with grunt
 - No XSS
 
 ---
+支持在Chrome开发者工具中断点调试：
+
+Debugging in chrome dev tools:
+
 ![alt debugging in chrome](http://ww1.sinaimg.cn/mw690/3e4b2a8dgw1eq5fnb946nj20xf0j9q8e.jpg "debugging in chrome")
 ---
 
-_为了足够简单，目前只支持 <%= %>， <%- %> 和 <% %> 标签_
+_为了足够简单，目前只支持 __<%= %>__， __<%- %>__ 和 __<% %>__ 标签_
 
-_For simple and thin, only support tags <%= %> , <%- %> or <% %>_
+_For simple and thin, only support tags __<%= %>__ , __<%- %>__ or __<% %>___
 
 --------
+
+安装
+--------
+Installation
+--------
+
+
+在你的Gruntfile.js所在目录下，执行：
+
+In your project's gruntfile directory, run:
+
+    npm install grunt-ejs2seajs --save-dev
+
+添加下面这句到你的Gruntfile.js中：
+
+Then add this line to your project's gruntfile:
+
+    grunt.loadNpmTasks('grunt-ejs2seajs');
+
 
 Gruntfile.js
 --------
-    'use strict';
-    module.exports = function (grunt) {
-
-        grunt.initConfig({
-            ejs2seajs: {
-                template: {
-                    src: [
-                        'src/js/**/tpls' // target to the "tpls" directories
-                    ],
-                    expand: true
-                }
-            },
-            watch: {
-                template: {
-                    files: ['src/js/**/tpls/*.ejs'],
-                    tasks: ['ejs2seajs']
-                }
+        ejs2seajs: {
+            template: {
+                src: [
+                    'src/js/**/tpls' // target to the "tpls" directories
+                ],
+                expand: true
             }
-        });
+        }
 
         grunt.loadNpmTasks('grunt-ejs2seajs');
-        grunt.loadNpmTasks('grunt-contrib-watch');
-
-        grunt.registerTask('default', ['ejs2seajs', 'watch']);
-    };
-
+    
 
 tpls目录的结构：
 --------
-Files example:
+example:
 --------
     ..
     |_ tpls/
@@ -64,9 +72,9 @@ Files example:
     | |_ b.ejs
     |_ tpls.js <- require this file
     
-执行 grun 命令：
+启动 grun：
 --------
-Excute grunt command:
+start grunt:
 --------
     $ grunt ↵
     
