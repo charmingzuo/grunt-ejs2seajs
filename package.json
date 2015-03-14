@@ -1,6 +1,6 @@
 {
   "name": "grunt-ejs2seajs",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "转换ejs模板文件为seajs模块, 但只支持基本标签：<%= %> , <%- %> or <% %>，不支持ejs内嵌语法",
   "main": "index.js",
   "scripts": {
@@ -15,6 +15,7 @@
   "author": {
     "name": "左明"
   },
+  "repository": "https://github.com/charmingzuo/grunt-ejs2seajs.git",
   "license": "MIT",
   "_id": "grunt-ejs2seajs@0.1.10",
   "_shasum": "17833d8df2db35861a88b536bfaaec4e62f51c80",
